@@ -4,12 +4,13 @@
  * insert_node - inserts a node into a linked list
  * @head: First Param pointer to the head
  * @number: Number to insert
+ * Return: Always Success
  */
 
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *node = *head, *new_node;
-	
+
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 	{
