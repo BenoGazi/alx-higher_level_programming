@@ -25,7 +25,7 @@ int is_palindrome(listint_t **head)
 	}
 	i = 0;
 	middle = *head;
-	while (i < _len / 2)
+	while (i < (_len  -1) / 2)
 	{
 		middle = middle->next;
 		i++;
@@ -94,20 +94,4 @@ int _listcomp(listint_t *head, listint_t *middle, int _len)
 		i++;
 	}
 	return (1);
-}
-
-/**_free - frees list
- * @head: head node
- */
-
-void _free(listint_t *head)
-{
-	listint_t *temp;
-
-	while (head != NULL)
-	{
-		temp = head;
-		head = head->next;
-		free(temp);
-	}
 }
