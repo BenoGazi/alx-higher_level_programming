@@ -23,6 +23,7 @@ size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
 
+void _free(listint_t *head);
 void _rev(listint_t **head);
 int _listcomp(listint_t *head, listint_t *middle, int _len);
 int is_palindrome(listint_t **head);

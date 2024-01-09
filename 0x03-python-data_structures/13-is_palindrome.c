@@ -95,3 +95,19 @@ int _listcomp(listint_t *head, listint_t *middle, int _len)
 	}
 	return (1);
 }
+
+/**_free - frees list
+ * @head: head node
+ */
+
+void _free(listint_t *head)
+{
+	listint_t *temp;
+
+	while (head != NULL)
+	{
+		temp = head;
+		head = head->next;
+		free(temp);
+	}
+}
