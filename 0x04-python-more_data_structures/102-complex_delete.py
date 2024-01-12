@@ -1,4 +1,4 @@
-#!/usr/bin/usr
+#!/usr/bin/python3
 def complex_delete(a_dictionary, value):
     temp = a_dictionary.copy()
     for key, val in temp.items():
