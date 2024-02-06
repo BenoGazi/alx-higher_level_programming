@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """Defines Json file reading function"""
 import json
 def load_from_json_file(filename):
