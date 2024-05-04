@@ -5,7 +5,7 @@ if __name__ == "__main__":
     import requests
     import sys
     res = requests.get(sys.argv[1])
-    if not res.ok:
+    if res.status_code != requests.codes.ok:
         print('Error Code: {}'.format(res.status_code))
     else:
         print(res.text)
