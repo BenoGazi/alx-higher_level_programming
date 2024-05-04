@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""pmail post"""
-if __name_ == "__main__":
+"""email post"""
+
+if __name__ == "__main__":
     import urllib.request
     import urllib.parse
     import sys
